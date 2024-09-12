@@ -1,3 +1,10 @@
+# Problem: Given starting and ending years, 
+# write a program with a function to calculate the number of days 
+# from the starting year to ending year inclusive.  
+# Hints: Write a function to check for a leap year. 
+# Type Bool and Boolean Expressions. 
+
+
 # 1y = 365d / 366d
 # Leap year
 

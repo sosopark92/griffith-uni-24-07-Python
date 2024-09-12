@@ -1,4 +1,5 @@
-
+# Problem: Write a program with a function 
+# that converts all numerical digits in a string to the underline character. 
 
 s = str(input("Input a string? "))
 
