@@ -1,8 +1,9 @@
+i = 2  
+s = 'robin'  
+xs = [10, 20, 30, 40, 50]  
+t = (i, xs, s, False)
 
-tuple = ('one', 'two', 'three')
+print(xs[1:-2])
 
-print(tuple[0:])
-print(tuple[1:2])
-print(tuple[1:])
 
 
