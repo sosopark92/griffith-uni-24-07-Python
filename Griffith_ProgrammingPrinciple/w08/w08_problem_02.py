@@ -1,15 +1,37 @@
 
 
+# Enter two lists of integers
 
-list_1 = input("Enter numbers: ").split()
-print(list_1)
+def int_list(list):
+    list = list.split()
+    int_list = []
+    for n in list:
+        int_list.append(int(n))
+    return int_list
 
-int_list_1 = []
+# Calculate the sum of the first and the last integers in each list
+def list_sum(list):
+    if len(list) == 1:
+       return list[0]
+    else:
+       return list[0]+list[-1]
 
-for n in list_1:
-    int_list_1.append(int(n))
+#list1, list2
+list1 = input("list1: ")
+list2 = input("list2: ")
 
-print(int_list_1)
+list1 = int_list(list1)
+list2 = int_list(list2)
 
+sum_1 = list_sum(list1)
+sum_2 = list_sum(list2)
 
+# Print the larger sum
+# Print Same when they are tie
+if sum_1 > sum_2:
+    print(sum_1)
+elif sum_1 < sum_2:
+    print(sum_2)
+else:
+    print("tie")
     
