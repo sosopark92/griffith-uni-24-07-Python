@@ -10,7 +10,13 @@
 
 
 degree = input("Enter the degrees and the unit (C/F): ")
-d = "".join(c for c in degree if c.isalnum())
+
+d = ""
+for c in degree:
+    if c.isalnum():
+        d += c
+print(d)
+
 
 def Convert_FtoC(d):
     d = float(d[:d.find("F")])       

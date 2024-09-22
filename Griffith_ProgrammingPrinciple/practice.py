@@ -1,9 +1,9 @@
-i = 2  
-s = 'robin'  
-xs = [10, 20, 30, 40, 50]  
-t = (i, xs, s, False)
+degree = input("Enter the degrees and the unit (C/F): ")
 
-print(xs[1:-2])
-
+result = ""
+for c in degree:
+    if c.isalnum():
+        result += c
+print(result)
 
 
