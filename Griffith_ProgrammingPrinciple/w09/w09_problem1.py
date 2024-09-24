@@ -1,24 +1,23 @@
 
-#ask for file name from user
-name = input("Enter the file name: ")
-print("Source file name = ", name)
 
 try:
-    #open the file
-    sourcefile = open(name)
 
-    while True:
-        line = sourcefile.readline()
-        if not line:
-            break
-        print(line)
+    f1 = input("source file name: ")
+    f2 = "empty_to_fill.txt"
 
-    sourcefile.close()
+    with open(f1, 'r') as f1, open(f2, 'w') as f2:
+
+        empty_lines = 0
+
+        for line in f1:
+            if not line.strip() == "":
+                f2.write(line)
+            else:
+                empty_lines += 1
+        print(empty_lines)
 
 except:
-    print("The file", name, "does not exist")
-#readlines
-#readline
-#read
+    print("file not found")
+
 
 
