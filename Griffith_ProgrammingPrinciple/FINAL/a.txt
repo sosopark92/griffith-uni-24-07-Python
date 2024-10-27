@@ -2,6 +2,6 @@ Alabama 12.7 89.6 67
 Alaska
 Arizona 1.0
 Arkansas -67.8 3.4
-California 13.0 15.4 17.320.4
+California 13.0 15.4 17.3 20.4
 Colorado
 Connecticut 6.9
